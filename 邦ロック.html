@@ -5,18 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>邦ロックのおすすめ曲</title>
   <style>
-    /* 背面の本来のページ */
+ 
+    /* デモ用のスタイル */
     body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      padding: 50px;
-      background: #f5f5f5;
+      background: #f0f0f0;
+      margin: 0;
     }
-
     /* 前面オーバーレイ */
     .welcome-overlay {
       position: fixed;
@@ -86,15 +84,15 @@
 </head>
 <body>
   <!-- 背面にあるHTML -->
-  <div class="main-content">
-    <h1>邦ロックのおすすめ曲</h1>
+  <div class="typewriter">
+    <h1>超個人的！邦ロックのおすすめ曲</h1>
     <p>ここに本来のページ内容を表示します。</p>
     <ul>
       <li>曲1</li>
       <li>曲2</li>
       <li>曲3</li>
     </ul>
-  </div>
+  </div>  
 
   <!-- 最初に前面表示するHTML -->
   <div class="welcome-overlay">
