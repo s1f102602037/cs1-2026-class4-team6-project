@@ -4,101 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>邦ロックのおすすめ曲</title>
-  <style>
- 
-    /* デモ用のスタイル */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #f0f0f0;
-      margin: 0;
-    }
-    /* 前面オーバーレイ */
-    .welcome-overlay {
-      position: fixed;
-      inset: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
-      z-index: 9999;
-
-      /* バウンス → 2秒後にフェードアウト */
-      animation: fadeOut 1s ease 2s forwards;
-    }
-
-    .notification {
-      background: white;
-      padding: 30px 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      text-align: center;
-
-      animation: bounceIn 0.8s ease-out;
-    }
-
-    .notification h2 {
-      margin: 0;
-      color: #333;
-      font-size: 24px;
-    }
-
-    @keyframes bounceIn {
-      0% {
-        transform: scale(0) translateY(-50px);
-        opacity: 0;
-      }
-      50% {
-        transform: scale(1.08) translateY(0);
-        opacity: 1;
-      }
-      70% {
-        transform: scale(0.9) translateY(-10px);
-      }
-      85% {
-        transform: scale(1.03) translateY(0);
-      }
-      100% {
-        transform: scale(1) translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeOut {
-      0% {
-        opacity: 1;
-        visibility: visible;
-      }
-      99% {
-        opacity: 0;
-        visibility: visible;
-      }
-      100% {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="邦ロック.css"/>
 </head>
 <body>
-  <!-- 背面にあるHTML -->
-  <div class="typewriter">
-    <h1>超個人的！邦ロックのおすすめ曲</h1>
-    <p>ここに本来のページ内容を表示します。</p>
-    <ul>
-      <li>曲1</li>
-      <li>曲2</li>
-      <li>曲3</li>
-    </ul>
-  </div>  
-
+  
   <!-- 最初に前面表示するHTML -->
   <div class="welcome-overlay">
     <div class="notification">
       <h2>ようこそ邦ロックページへ！</h2>
     </div>
   </div>
+  <header>
+    <div class="logo"></div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <nav id="menu">
+    <a href="#">ホーム</a>
+    <a href="#">ジャンル診断</a>
+    <a href="#">仮</a>
+    <a href="#">仮２</a>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('open');
+    }
+  </script>
+  <div class="theme">
+    <div class="content">超個人的！邦ロックおすすめ曲</div>
+  </div> 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/59h6J25QnnT8xshPTFLkpe?utm_source=generator&si=40e22709abfc4c1e" width="60%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </body>
 </html>
