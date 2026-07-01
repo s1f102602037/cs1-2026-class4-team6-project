@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #263238;
+    font-family: "BIZ UDPGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background-color: #eef3f2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+    letter-spacing: 0;
+}
+
+.genre-page {
+    width: 90%;
+    max-width: 960px;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid #607d8b;
+}
+
+.hero {
+    position: relative;
+    min-height: 360px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #315b63;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Concert_Band.jpg/960px-Concert_Band.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.hero-label {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.hero h1 {
+    margin: 12px 0 0;
+    font-size: 64px;
+}
+
+.photo-credit {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    margin: 0;
+    color: white;
+    font-size: 11px;
+    text-align: right;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.photo-credit a {
+    color: white;
+}
+
+.intro,
+.composer-section {
+    padding: 25px 35px;
+}
+
+.intro {
+    line-height: 1.9;
+    background-color: #f7f9f8;
+    border-bottom: 1px solid #b0bec5;
+}
+
+.intro h2,
+.composer-section h2 {
+    margin-top: 0;
+    color: #315b63;
+}
+
+.composer-card {
+    margin-bottom: 20px;
+    padding: 22px;
+    background-color: #fffdf4;
+    border: 1px solid #90a4ae;
+}
+
+.composer-card h3 {
+    margin-top: 0;
+}
+
+.composer-card h3 a {
+    color: #315b63;
+}
+
+.composer-body {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.composer-profile {
+    flex: 2;
+    line-height: 1.8;
+}
+
+.composer-songs {
+    flex: 1;
+}
+
+.composer-songs h4 {
+    margin: 0 0 8px;
+}
+
+.composer-songs ol {
+    margin: 0;
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+.listen-box {
+    display: inline-block;
+    padding: 14px 18px;
+    color: white;
+    background-color: #c94c4c;
+    text-align: center;
+    text-decoration: none;
+}
+
+.listen-box:hover {
+    background-color: #a83b3b;
+}
+
+.page-actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 35px 35px;
+}
+
+.page-actions a {
+    width: 160px;
+    padding: 14px;
+    color: #263238;
+    background-color: #dbe7e5;
+    border: 1px solid #607d8b;
+    text-align: center;
+    text-decoration: none;
+}
+
+.page-actions a:hover {
+    background-color: #c5d8d4;
+}
+
+@media (max-width: 700px) {
+    .genre-page {
+        width: 94%;
+        margin: 12px auto;
+    }
+
+    .hero {
+        min-height: 280px;
+        padding: 35px 15px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .photo-credit {
+        left: 8px;
+        right: 8px;
+        font-size: 9px;
+    }
+
+    .intro,
+    .composer-section {
+        padding: 20px;
+    }
+
+    .composer-body {
+        display: block;
+    }
+
+    .listen-box {
+        margin-top: 15px;
+    }
+
+    .page-actions {
+        gap: 12px;
+        padding: 5px 20px 25px;
+    }
+}
