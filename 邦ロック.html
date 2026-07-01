@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>邦ロックのおすすめ曲</title>
+  <title>邦楽ロックのおすすめ曲</title>
   <link rel="stylesheet" type="text/css" href="邦ロック.css"/>
 </head>
 <body>
@@ -11,34 +11,39 @@
   <!-- 最初に前面表示するHTML -->
   <div class="welcome-overlay">
     <div class="notification">
-      <h2>ようこそ邦ロックページへ！</h2>
+      <h2>ようこそ邦楽ロックページへ！</h2>
     </div>
   </div>
+ <input type="checkbox" id="menu-toggle">
+
   <header>
     <div class="logo"></div>
-    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <label for="menu-toggle" class="hamburger">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </label>
   </header>
 
-  <nav id="menu">
-    <a href="#">ホーム</a>
-    <a href="#">ジャンル診断</a>
-    <a href="#">仮</a>
+  <nav>
+    <a href="#">トップページ</a>
+    <a href="#">適正ジャンル診断</a>
+    <a href="#">仮１</a>
     <a href="#">仮２</a>
   </nav>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById('menu').classList.toggle('open');
-      document.getElementById('hamburger').classList.toggle('open');
-    }
-  </script>
+  <label for="menu-toggle" class="overlay"></label>
+
   <div class="theme">
-    <div class="content">超個人的！邦ロックおすすめ曲</div>
+    <div class="content">超個人的！邦楽ロックおすすめ曲</div>
   </div> 
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/59h6J25QnnT8xshPTFLkpe?utm_source=generator&si=40e22709abfc4c1e" width="60%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+ <h1 id="first">1.</h1>
+ <hr>
+ <h1 id="second">2.</h1>
+ <hr>
+ <h1 id="third">3.</h1>
+
+
 </body>
 </html>
